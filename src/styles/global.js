@@ -1,13 +1,11 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
-    body, html{
-        height: 100%;
-    }
+html, body {margin: 0; height: 100%; overflow: hidden}
   #___gatsby{
     height: 100%;
     & > div {
-      height: 100%;
+      height: 96%;
     }
   }
   main{

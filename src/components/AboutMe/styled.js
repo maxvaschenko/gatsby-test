@@ -9,10 +9,13 @@ export const AboutMeWrapper = styled.div`
   .about-wrapper {
     display: flex;
     width: 60%;
-        max-width: 38em;
+    max-width: 38em;
+    section {
+      padding-right: 1em;
+    }    
   }
   h3 {
-    padding-bottom: 0.3em;
+    padding-bottom: 0.5em;
   }
   .icons-wrapper {
     a {

@@ -5,8 +5,9 @@ module.exports = {
     author: `Max Vashchenko`,
     titles: {
       blogTitle: 'Blog',
-      copyright: '© 2019 Max Vashchenko'
-    },
+      copyright: '© 2019 Max Vashchenko',
+      generalTitle: 'Frontend developer at <a href="https://www.linkedin.com/company/devmaticcompany/about/">Devmatic</a>. Author of <a href="https://t.me/smart_dev">@smart_dev</a>, <a href="https://www.instagram.com/frontenders_notes/">frontenders_notes</a> Instagram blog and <a href="https://www.youtube.com/channel/UCd63YBqE1I_tedyuYATmz6Q">Youtube channel</a>'
+    }
   },
 
   plugins: [

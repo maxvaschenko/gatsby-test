@@ -4,6 +4,7 @@ import SEO from '../components/seo'
 import { AvatarContainer } from './styled'
 import avatar from '../images/avatar.png'
 import { graphql, useStaticQuery } from 'gatsby'
+import { AboutMe } from '../components/AboutMe'
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -34,6 +35,7 @@ const IndexPage = () => {
           <h3 dangerouslySetInnerHTML={{ __html: generalTitle }} />
         </section>
       </AvatarContainer>
+      <AboutMe />
     </Layout>
   )
 }

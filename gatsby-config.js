@@ -5,6 +5,7 @@ module.exports = {
     author: `Max Vashchenko`,
     titles: {
       blogTitle: 'Blog',
+      copyright: '© 2019 Max Vashchenko'
     },
   },
 

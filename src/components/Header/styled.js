@@ -5,12 +5,11 @@ export const HeaderWrapper = styled.header`
   justify-content: space-between;
   align-items: center;
   height: 3em;
-  margin-bottom: 1.45rem;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: rgba(0, 0, 0, 0.125);
   padding: 0 2em;
-
+  margin: 0;
   a {
     padding-top: 1rem;
     padding-bottom: 1rem;

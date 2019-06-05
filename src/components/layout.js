@@ -1,7 +1,9 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Header from './Header/header'
+import Index from './Header'
+import { Footer } from './Footer'
 import './layout.css'
+import { GlobalStyles } from '../styles/global'
 
 export default ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -11,6 +13,7 @@ export default ({ children }) => {
           title
           titles {
             blogTitle
+            copyright
           }
         }
       }
@@ -19,14 +22,15 @@ export default ({ children }) => {
 
   const {
     title,
-    titles: { blogTitle },
+    titles: { blogTitle, copyright },
   } = data.site.siteMetadata
 
   return (
     <>
-      <Header siteTitle={title} blogTitle={blogTitle} />
+      <GlobalStyles />
+      <Index siteTitle={title} blogTitle={blogTitle} />
       <main>{children}</main>
-      <footer />
+      <Footer copyright={copyright} />
     </>
   )
 }

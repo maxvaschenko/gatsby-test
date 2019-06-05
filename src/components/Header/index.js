@@ -3,19 +3,19 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { HeaderWrapper } from './styled'
 
-const Header = ({ siteTitle, blogTitle }) => (
+const Index = ({ siteTitle, blogTitle }) => (
   <HeaderWrapper>
     <Link to="/">{siteTitle}</Link>
     <Link to="/blog">{blogTitle}</Link>
   </HeaderWrapper>
 )
 
-Header.propTypes = {
+Index.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
+Index.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default Index

@@ -1,20 +1,28 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
 import Layout from '../components/layout'
-import Image from '../components/image'
 import SEO from '../components/seo'
+import { AvatarContainer } from './styled'
+import avatar from '../images/avatar.png'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Max Blog" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <AvatarContainer>
+      <section>
+        <div className="image-container">
+          <img src={avatar} alt="" />
+        </div>
+        <h1>Max Vashchenko</h1>
+        <h3>
+          Frontend developer at{' '}
+          <a href="https://www.linkedin.com/company/devmaticcompany/about/">Devmatic</a>. Author of{' '}
+          <a href="https://t.me/smart_dev">@smart_dev</a>,{' '}
+          <a href="https://www.instagram.com/frontenders_notes/">frontenders_notes</a> Instagram
+          blog and{' '}
+          <a href="https://www.youtube.com/channel/UCd63YBqE1I_tedyuYATmz6Q">Youtube channel</a>
+        </h3>
+      </section>
+    </AvatarContainer>
   </Layout>
 )
 

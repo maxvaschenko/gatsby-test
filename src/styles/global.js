@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
-html, body {margin: 0; height: 100%; overflow: hidden}
+html, body {margin: 0; height: 100%;}
   #___gatsby{
     height: 100%;
     & > div {
@@ -17,5 +17,10 @@ html, body {margin: 0; height: 100%; overflow: hidden}
         &:hover{
               color: #006599;
         }
+  }
+  @media (min-width: 320px) and (max-width: 480px){
+      main{
+    height: max-content;
+  }
   }
 `

@@ -36,4 +36,16 @@ export const AboutMeWrapper = styled.div`
       width: 25px;
     }
   }
+  
+  @media (min-width: 320px) and (max-width: 480px){
+  padding-top: 3em;
+    .about-wrapper{
+      width: 85%;
+      flex-direction: column;
+      section {
+        padding-right: 0;
+        padding-bottom: 2em;
+      }
+    }
+  }
 `

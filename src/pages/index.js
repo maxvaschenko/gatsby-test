@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { AvatarContainer } from './styled'
+import { AvatarContainer } from '../styles/styled'
 import avatar from '../images/avatar.png'
 import { graphql, useStaticQuery } from 'gatsby'
 import { AboutMe } from '../components/AboutMe'

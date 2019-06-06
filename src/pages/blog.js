@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
 import inDevImage from '../images/in-dev.gif'
-import { BlogWrapper } from './styled'
+import { BlogWrapper } from '../styles/styled'
 
 const Blog = () => (
   <>
@@ -12,8 +12,7 @@ const Blog = () => (
         <SEO title="Blog" />
         <h1>Hello. Blog now is in development. Keep for updates</h1>
         <div className="image-wrapper">
-          <img src={inDevImage} alt=""/>
-
+          <img src={inDevImage} alt="" />
         </div>
         <Link to="/">Go back home</Link>
       </BlogWrapper>

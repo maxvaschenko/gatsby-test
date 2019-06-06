@@ -25,9 +25,7 @@ export const AboutMe = () => {
       <div className="about-wrapper">
         <section>
           <h3>About me</h3>
-          <p dangerouslySetInnerHTML={{__html: aboutMe}}>
-
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: aboutMe }} />
         </section>
         <section>
           <h3>Contact</h3>

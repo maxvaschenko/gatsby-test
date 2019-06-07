@@ -23,6 +23,13 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-50652157-4",
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

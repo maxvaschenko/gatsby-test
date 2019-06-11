@@ -32,7 +32,6 @@ const Blog = () => {
           <SEO title="Blog" />
           {posts.map(({ node }) => {
             const post = node.frontmatter
-            console.log(post)
             return (
               <a key={post.date} className="blog-post-container" href={post.path}>
                 <div className="img-container">

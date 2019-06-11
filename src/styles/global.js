@@ -9,7 +9,7 @@ html, body {margin: 0; height: 100%;}
     }
   }
   main{
-    height: max-content;
+    height: calc(100% - 3em);
   }
   a{
     text-decoration: none;

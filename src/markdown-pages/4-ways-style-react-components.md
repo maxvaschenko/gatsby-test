@@ -2,6 +2,8 @@
 path: "/blog/4-ways-style-react-components"
 date: "2018-08-04"
 title: "4 способа стилизировать React - компоненты"
+description: "На сегодняшний день разработано много способов стилизации React компонентов. От библиотек до использования традиционных СSS файлов. Выбор довольно обширен и, скорее всего, будет соответствовать вашим предпочтениям. Вот четыре способа стилизации React компонентов."
+titleImage: "https://habrastorage.org/webt/pq/sq/gj/pqsqgjfucbcrtsrjwu_-iyxlvno.png"
 ---
 
 

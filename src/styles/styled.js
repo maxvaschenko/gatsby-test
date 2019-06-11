@@ -42,16 +42,57 @@ export const BlogWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   height: calc(100vh - 5em);
+  padding: 2em 0;
   h1 {
     padding: 1em 0.5em 2em 0.5em;
   }
-  .image-wrapper {
-    width: max-content;
-    padding-bottom: 2em;
+  h3 {
+    padding-bottom: 0.2em;
+  }
+  .blog-post-container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    &:active,
+    &:focus, &:visited {
+      outline: 0;
+      border: none;
+      -moz-outline-style: none;
+      color: #000;
+    }
+  }
+  .descr-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.5em 1em;
+  }
+  .img-container {
+    max-width: 300px;
+    height: max-content;
+  }
+  a {
+    color: #000;
+    &:hover {
+      color: #006599;
+    }
   }
   @media (min-width: 320px) and (max-width: 480px) {
-    .image-wrapper {
-      width: 100%;
+    .img-container {
+      display: none;
+    }
+    .blog-post-container {
+      max-width: 90%;
+    }
+    .descr-container {
+      padding: 0;
+    }
+    h3 {
+      font-size: 1.7rem;
+    }
+    p {
+      font-size: 1.3rem;
     }
   }
 `

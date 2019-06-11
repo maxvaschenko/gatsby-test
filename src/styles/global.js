@@ -18,6 +18,9 @@ html, body {margin: 0; height: 100%;}
               color: #006599;
         }
   }
+  .blog-post-container{
+    max-width: 70%;
+  }
   @media (min-width: 320px) and (max-width: 480px){
       main{
     height: max-content;

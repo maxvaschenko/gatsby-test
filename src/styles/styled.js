@@ -41,6 +41,7 @@ export const BlogWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   height: calc(100vh - 5em);
   padding: 2em 0;
   h1 {
@@ -50,12 +51,19 @@ export const BlogWrapper = styled.div`
     padding-bottom: 0.2em;
   }
   .blog-post-container {
-    max-width: 80%;
-    margin: 0 auto;
+    width: 80%;
+    //margin: 0 auto;
     display: flex;
     align-items: center;
+    margin-bottom: 0.5em;
+    .img-container {
+      width: 50%;
+      max-width: 300px;
+      height: max-content;
+    }
     &:active,
-    &:focus, &:visited {
+    &:focus,
+    &:visited {
       outline: 0;
       border: none;
       -moz-outline-style: none;
@@ -67,10 +75,6 @@ export const BlogWrapper = styled.div`
     flex-direction: column;
     justify-content: space-around;
     padding: 0.5em 1em;
-  }
-  .img-container {
-    max-width: 300px;
-    height: max-content;
   }
   a {
     color: #000;

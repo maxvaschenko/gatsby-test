@@ -9,7 +9,7 @@ html, body {margin: 0; height: 100%;}
     }
   }
   main{
-    height: calc(100% - 3em);
+    min-height: calc(100% - 3em);
   }
   a{
     text-decoration: none;
@@ -17,6 +17,9 @@ html, body {margin: 0; height: 100%;}
         &:hover{
               color: #006599;
         }
+  }
+  .blog-post-container{
+    max-width: 70%;
   }
   @media (min-width: 320px) and (max-width: 480px){
       main{

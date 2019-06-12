@@ -51,7 +51,7 @@ export const BlogWrapper = styled.div`
     padding-bottom: 0.2em;
   }
   .blog-post-container {
-    width: 80%;
+    width: 85%;
     //margin: 0 auto;
     display: flex;
     align-items: center;
@@ -83,11 +83,13 @@ export const BlogWrapper = styled.div`
     }
   }
   @media (min-width: 320px) and (max-width: 480px) {
+  height: max-content;
     .img-container {
       display: none;
     }
     .blog-post-container {
-      max-width: 90%;
+      max-width: 85%;
+      margin-bottom: 1em;
     }
     .descr-container {
       padding: 0;

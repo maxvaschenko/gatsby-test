@@ -7,9 +7,17 @@ export const HeaderWrapper = styled.header`
   height: 3em;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: rgba(0, 0, 0, 0.125);
+  border-bottom-color: var(--borderColor);
   padding: 0 2em;
   margin: 0;
+  .theme-toggler{
+    display: flex;
+    align-items: center;
+    label {
+        margin-right: .6em;
+    margin-top: .4em;
+    }
+  }
   a {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -18,6 +26,6 @@ export const HeaderWrapper = styled.header`
     font-size: 0.8em;
     font-weight: 700;
     text-decoration: none;
-    color: #2e2e2e;
+    color: var(--textLink);
   }
 `

@@ -83,7 +83,7 @@ export const BlogWrapper = styled.div`
     }
   }
   @media (min-width: 320px) and (max-width: 480px) {
-  height: max-content;
+    height: max-content;
     .img-container {
       display: none;
     }
@@ -99,6 +99,37 @@ export const BlogWrapper = styled.div`
     }
     p {
       font-size: 1.3rem;
+    }
+  }
+`
+
+export const NotFoundContainer = styled.div`
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  .link-wrapper {
+    padding-top: 1em;
+  }
+  p {
+    font-size: 0.9em;
+    font-weight: 800;
+  }
+  h1 {
+    font-size: 16em;
+  }
+
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: 12em;
+    }
+    p {
+      font-size: 0.7em;
+      font-weight: 800;
+      max-width: 80%;
+      text-align: center;
     }
   }
 `

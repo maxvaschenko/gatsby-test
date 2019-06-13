@@ -10,12 +10,12 @@ export const HeaderWrapper = styled.header`
   border-bottom-color: var(--borderColor);
   padding: 0 2em;
   margin: 0;
-  .theme-toggler{
+  .theme-toggler {
     display: flex;
     align-items: center;
     label {
-        margin-right: .6em;
-    margin-top: .4em;
+      margin-right: 0.6em;
+      margin-top: 0.4em;
     }
   }
   a {

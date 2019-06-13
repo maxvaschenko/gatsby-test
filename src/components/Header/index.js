@@ -14,13 +14,13 @@ const Index = ({ siteTitle, blogTitle }) => (
           <label>
             <Toggle
               defaultChecked={theme || localStorage.getItem('theme') === 'dark'}
-              onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')} />
+              onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+            />
           </label>
         )}
       </ThemeToggler>
       <Link to="/blog">{blogTitle}</Link>
     </div>
-
   </HeaderWrapper>
 )
 

@@ -11,6 +11,8 @@ const IndexPage = () => {
     query MainQuery {
       site {
         siteMetadata {
+          title
+          description
           titles {
             generalTitle
           }
@@ -20,12 +22,14 @@ const IndexPage = () => {
   `)
 
   const {
+    title,
+    description,
     titles: { generalTitle },
   } = data.site.siteMetadata
 
   return (
     <Layout>
-      <SEO title="Max Blog" />
+      <SEO title={title} description={description} />
       <AvatarContainer>
         <section>
           <div className="image-container">

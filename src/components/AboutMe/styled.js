@@ -27,6 +27,7 @@ export const AboutMeWrapper = styled.div`
       display: flex;
       align-items: center;
       padding-bottom: 0.3em;
+      color: var(--textNormal);
       .icon-wrapper {
         padding-right: 0.3em;
       }

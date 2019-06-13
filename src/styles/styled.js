@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const AvatarContainer = styled.div`
-  background-color: #f5f8fa;
+  background-color: var(--sectionBg);
   min-height: 35%;
   display: flex;
   align-items: center;
@@ -20,7 +20,7 @@ export const AvatarContainer = styled.div`
       height: auto;
       width: 120px;
       padding: 0.5rem;
-      border: 1px solid rgba(0, 0, 0, 0.125);
+      border: 1px solid var(--textNormal);
       border-radius: 50%;
     }
   }
@@ -28,7 +28,6 @@ export const AvatarContainer = styled.div`
     padding-bottom: 0.3em;
   }
   h3 {
-    color: #aaa;
     font-size: 1.3rem;
     font-weight: 400;
     width: 60%;
@@ -75,12 +74,6 @@ export const BlogWrapper = styled.div`
     flex-direction: column;
     justify-content: space-around;
     padding: 0.5em 1em;
-  }
-  a {
-    color: #000;
-    &:hover {
-      color: #006599;
-    }
   }
   @media (min-width: 320px) and (max-width: 480px) {
     height: max-content;

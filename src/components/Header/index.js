@@ -1,16 +1,18 @@
+import React, { useEffect, useState } from 'react'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
-import React from 'react'
 import { HeaderWrapper } from './styled'
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import Toggle from 'react-toggle'
 
 const Index = ({ siteTitle, blogTitle }) => {
-  let getTheme
+  const [userTheme, setTheme] = useState(false)
 
-  if (typeof window !== 'undefined') {
-    getTheme = () => localStorage.getItem('theme') === 'dark'
-  }
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setTheme(localStorage.getItem('theme') === 'dark')
+    }
+  }, [])
 
   return (
     <HeaderWrapper>
@@ -20,7 +22,7 @@ const Index = ({ siteTitle, blogTitle }) => {
           {({ theme, toggleTheme }) => (
             <label>
               <Toggle
-                defaultChecked={theme === 'dark' || (getTheme && getTheme())}
+                defaultChecked={theme === 'dark' || userTheme}
                 onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
               />
             </label>

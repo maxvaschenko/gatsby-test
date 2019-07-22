@@ -17,4 +17,9 @@ export const ModalWrapper = styled.div`
     color: white;
     text-decoration: underline;
   }
+  @media screen and (max-width: 800px) {
+    padding: 1em;
+    flex-wrap: wrap;
+    height: auto;
+  }
 `

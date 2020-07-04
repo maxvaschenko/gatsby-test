@@ -7,9 +7,11 @@ import { graphql, useStaticQuery } from 'gatsby'
 import { AboutMe } from '../components/AboutMe'
 import { getCookie } from '../utils/cookie'
 import { Modal } from '../components/Common/Modal'
+import StubComponent from '../components/ContentLoader'
 
 const IndexPage = () => {
   const [isCookieSet, changeIsCookieSet] = useState(false)
+  const [isAvatarLoaded, changeIsAvatarLoaded] = useState(false)
   useEffect(() => {
     const hasCookie = getCookie('isAgreed')
     if (hasCookie) {
@@ -47,8 +49,14 @@ const IndexPage = () => {
       <AvatarContainer>
         {!isCookieSet && <Modal changeIsCookieSet={hideModal} />}
         <section>
+          {!isAvatarLoaded && <StubComponent />}
           <div className="image-container">
-            <img src={avatar} alt="" />
+            <img
+              src={avatar}
+              style={{ display: isAvatarLoaded ? 'block' : 'none' }}
+              alt=""
+              onLoad={setTimeout(() => changeIsAvatarLoaded(true), 1000)}
+            />
           </div>
           <h1>Max Vashchenko</h1>
           <h3 dangerouslySetInnerHTML={{ __html: generalTitle }} />

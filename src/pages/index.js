@@ -55,7 +55,7 @@ const IndexPage = () => {
               src={avatar}
               style={{ display: isAvatarLoaded ? 'block' : 'none' }}
               alt=""
-              onLoad={() => changeIsAvatarLoaded(true)}
+              onLoad={setTimeout(() => changeIsAvatarLoaded(true), 2000)}
             />
           </div>
           <h1>Max Vashchenko</h1>

@@ -20,12 +20,14 @@ export const AboutMe = () => {
     titles: { aboutMe },
   } = data.site.siteMetadata
 
+  const datesDifference = new Date().getFullYear() - 2017
+
   return (
     <AboutMeWrapper>
       <div className="about-wrapper">
         <section>
           <h3>About me</h3>
-          <p dangerouslySetInnerHTML={{ __html: aboutMe }} />
+          <p dangerouslySetInnerHTML={{ __html: `${datesDifference} ${aboutMe}` }} />
         </section>
         <section>
           <h3>Contact</h3>
